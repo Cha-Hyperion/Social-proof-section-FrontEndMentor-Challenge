@@ -1,0 +1,15 @@
+@mixin breakpoint($size: 'large') {
+    $breakpoint-min-width: $breakpoint-large-min-width;
+
+    @media (min-width: $breakpoint-min-width) {
+        @content;
+    }
+}
+
+// Je factorise la media query pour le breakpoint medium avec un mixin
+@mixin breakpoint-large {
+    @include breakpoint('large') {
+        // Récupère le contenu associé au @include
+        @content;
+    }
+}

@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    font-size: $font-size;
+}
+.all-content {
+    position: relative;
+    font-size: $font-size;
+    @include breakpoint-large {
+        max-height: 810px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.content {
+    max-width: calc(375px - 2rem);
+    font-family: 'Spartan', sans-serif;
+    margin: 5rem auto;
+    height: 100%;
+    @include breakpoint-large {
+        max-width: calc(1440px - 16rem);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+.attribution {
+    padding-bottom: 10px;
+    @include breakpoint-large {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}
+

@@ -1,0 +1,25 @@
+.svg {
+    z-index: -1;
+    &__top {
+        position: absolute;
+        top: 0;
+        left: 0;
+        &--desktop {
+            display: none;
+            @include breakpoint-large {
+                display: block;
+            }
+        }
+    }
+    &__bottom {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        &--desktop {
+            display: none;
+            @include breakpoint-large {
+                display: block;
+            }
+        }
+    }
+}

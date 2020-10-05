@@ -1,0 +1,10 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'base/base';
+@import 'components/card';
+@import 'components/svg';
+
+@import 'page/social-proof';
+@import '../node_modules/reset-css/sass/reset';
+$fa-font-path: '../node_modules/font-awesome/fonts';
+@import '../node_modules/font-awesome/scss/font-awesome';

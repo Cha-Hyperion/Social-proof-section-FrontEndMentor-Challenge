@@ -1,0 +1,108 @@
+.card {
+    
+    text-align: center;
+    padding: 1rem;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 8px;
+
+    &--stars {
+        background: $color-background-two;
+        @include breakpoint-large {
+            display: flex;
+            width: 80%;
+            margin: .5rem 0;
+            z-index: 2; 
+        }
+        
+        &__number {
+            color: gold;
+            padding: .5rem;
+        }
+        
+        &__where {
+            color: $color-text-primary;
+            font-weight: 700;
+            padding: .5rem;
+            @include breakpoint-large {
+                margin-left: 1.5rem;
+            }
+        }
+        &--one {
+            @include breakpoint-large {
+                align-self: flex-start; 
+            }
+        }
+        &--two {
+            @include breakpoint-large {
+                align-self: center;
+            }
+        }
+        &--three {
+            @include breakpoint-large {
+                align-self: flex-end;
+            }
+        }
+    }
+    
+    &--review {
+        background: $color-text-primary;
+        color: white;
+        padding: 2rem;
+        @include breakpoint-large {
+            width: 32%;
+            margin: 0;
+        }
+        
+        &--one {
+            @include breakpoint-large {
+                align-self: flex-end;
+            }
+        }
+        &--two {
+            @include breakpoint-large {
+                align-self: center;
+            }
+        }
+        &--three {
+            @include breakpoint-large {
+                align-self: flex-start;
+            }
+        }
+
+        &__profil-picture {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 4rem;
+        }
+
+        &__author {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 2rem;
+
+            &__info {
+                margin-left: 1.5rem;
+            }
+
+            &__is-verified {
+                color: $color-text-secondary;
+                font-weight: 500;
+                margin-top: .5rem;
+            }
+            
+            &__name {
+                font-weight: 700;
+            }
+        }
+
+        &__content {
+            text-align: left;
+            line-height: 1.5;
+            @include breakpoint-large {
+            }
+        }
+    }
+
+}
