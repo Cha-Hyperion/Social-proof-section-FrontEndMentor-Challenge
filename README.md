@@ -1,6 +1,7 @@
 # Frontend Mentor - Social proof section
 
 👀 See my version in production : https://social-proof-section-front-end-mentor-challenge.vercel.app/
+
 👩🏼‍💻 My personal website : https://charlenezybala.com
 
 ![Design preview for the Social proof section coding challenge](./design/desktop-preview.jpg)
